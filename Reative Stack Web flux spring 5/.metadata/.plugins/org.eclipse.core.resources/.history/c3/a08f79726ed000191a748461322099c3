@@ -1,0 +1,5 @@
+package com.learnings.app.config;
+
+public class ReactiveConfig {
+
+}

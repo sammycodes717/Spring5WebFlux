@@ -1,0 +1,5 @@
+package com.learnings.app.repository;
+
+public class EmployeeRepository {
+
+}

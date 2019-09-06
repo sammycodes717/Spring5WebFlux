@@ -1,0 +1,14 @@
+package com.learnings.app.domain;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@Data
+public class EmployeeEvents {
+	
+	private Employee employee;
+	
+	private Date date;
+
+}

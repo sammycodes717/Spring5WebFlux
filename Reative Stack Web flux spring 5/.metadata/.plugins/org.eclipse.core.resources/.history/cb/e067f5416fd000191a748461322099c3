@@ -1,0 +1,13 @@
+package com.learnings.app.routerhandlers;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class RouterHandlers {
+
+	public Object getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

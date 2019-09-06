@@ -1,0 +1,15 @@
+package com.learnings.app.routerhandlers;
+
+import org.springframework.stereotype.Component;
+
+import reactor.core.publisher.Mono;
+
+@Component
+public class RouterHandlers {
+
+	public Mono<T> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

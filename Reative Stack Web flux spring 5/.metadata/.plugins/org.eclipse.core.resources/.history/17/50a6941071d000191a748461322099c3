@@ -1,0 +1,30 @@
+package com.learnings.app.routerhandlers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.reactive.function.server.ServerRequest;
+import org.springframework.web.reactive.function.server.ServerResponse;
+
+import com.learnings.app.domain.Employee;
+import com.learnings.app.repository.EmployeeRepository;
+
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+@Component
+public class RouterHandlers {
+
+	@Autowired
+	private EmployeeRepository employeeRepository;
+
+	public Mono<ServerResponse> getAll(ServerRequest serverRequest) {
+		return ServerResponse.ok().body(employeeRepository.findAll(), Employee.class);
+	}
+	
+	public Flux<ServerResponse> getId(ServerRequest serverRequest){
+		
+		String empId = serverRequest.pathVariable("id");
+		
+		
+	}
+}

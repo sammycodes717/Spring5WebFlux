@@ -1,0 +1,21 @@
+package com.learnings.app.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.reactive.function.server.RequestPredicates;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.RouterFunctions;
+
+@Configuration
+public class ReactiveConfig {
+	
+	RouterFunction<?> routerFunction(){
+		
+		RouterFunctions.route(
+				RequestPredicates.GET("")
+				)
+		
+		
+		
+	}
+
+}
